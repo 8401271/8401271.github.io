@@ -1,0 +1,54 @@
+@charset "UTF-8"
+
+header {
+  background-color: #F93939;
+}
+
+h1 {
+  font-family: serif;
+  text-align: center;
+  color: white;
+  background-color: #F93939;
+  margin-top: 0px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  margin-left: 15px;
+}
+h3 {
+  color: blue;
+  text-decoration: underline;
+  margin-left: 15px;
+}
+
+
+textarea {
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.comment { grid-area: comment; }
+.User { grid-area: user; }
+.tech { grid-area: tech; }
+.credit { grid-area: credit; }
+
+.grid {
+  display: grid;
+  grid-template-areas:
+  'comment comment user'
+  'comment comment user'
+  'comment comment tech'
+  'comment comment tech'
+  'credit  credit  credit';
+  grid-gap: 20px;
+  padding: 20px;
+  margin-left: 15px;
+}

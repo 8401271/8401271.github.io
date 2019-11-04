@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="Home(2).CSS"/>
+    <title>Pokedex.home</title>
+  </head>
+
+  <header>
+    <h1>
+      Pokédex
+    </h1>
+  </header>
+
+  <body>
+    <div class='grid'>
+      <div class="search" id="filter">
+        <input type="text" id="Search" onkeyup="searchfunction()" placeholder="Search..."/>
+      </div>
+
+      <div class=sort id=sort>
+        <button onclick=sortfunction() class="dropbtn">sort options</button>
+        <div id="dropdown" class="sort-content">
+          <button onclick=countupfunction() class=drp>Sort numerically</button>
+          <button onclick=countdownfunction() class=drp>sort reverse numerically</button>
+          <button onclick=AZfunction() class=drp>Sort alphabetically</button>
+          <button onclick=ZAfunction() class=drp>Sort reverse alphabet</button>
+        </div>
+      </div>
+      <div class=extras id=extras>
+        <button onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\_Home\\Further.html'" id=extras>further information</button>
+      </div>
+
+      <div class="index" id=index>
+        <table id=Pokelist>
+          <tr>
+            <!--
+            Table headers
+            -->
+            <th>Image</th>
+            <th>Number</th>
+            <th>Pokemon</th>
+            <th>Type 1</th>
+            <th>Type 2</th>
+          </tr>
+          <!--
+          Start the pokedex index table/list file for number, name,
+          first type, and second type
+          -->
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Bulbasaur.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\bulbasaur.jpg" alt="image"/></td>
+            <td id=Number>001</td>
+            <td id=Pokemon>Bulbasaur</td>
+            <td id=Type1>Grass</td>
+            <td id=Type2>Poison</td>
+          </tr>
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Ivysaur.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\Ivysaur.jpg" alt="image"/></td>
+            <td>002</td>
+            <td>Ivysaur</td>
+            <td>Grass</td>
+            <td>Poison</td>
+          </tr>
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Venusaur.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\Venusaur.jpg" alt="image"/></td>
+            <td>003</td>
+            <td>Venusaur</td>
+            <td>Grass</td>
+            <td>Poison</td>
+          </tr>
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Charmander.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\Charmander.jpg" alt="image"/></td>
+            <td>004</td>
+            <td>Charmander</td>
+            <td>Fire</td>
+            <td>-</td>
+          </tr>
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Charmeleon.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\Charmeleon.jpg" alt="image"/></td>
+            <td>005</td>
+            <td>Charmeleon</td>
+            <td>Fire</td>
+            <td>-</td>
+          </tr>
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Charizard.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\Charizard.jpg" alt="image"/></td>
+            <td>006</td>
+            <td>Charizard</td>
+            <td>Fire</td>
+            <td>Flying</td>
+          </tr>
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Squirtle.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\Squirtle.jpg" alt="image"/></td>
+            <td>007</td>
+            <td>Squirtle</td>
+            <td>Water</td>
+            <td>-</td>
+          </tr>
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Wartortle.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\Wartortle.jpg" alt="image"/></td>
+            <td>008</td>
+            <td>Wartortle</td>
+            <td>Water</td>
+            <td>-</td>
+          </tr>
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Blastoise.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\Blastoise.jpg" alt="image"/></td>
+            <td>009</td>
+            <td>Blastoise</td>
+            <td>Water</td>
+            <td>-</td>
+          </tr>
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Caterpie.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\Caterpie.jpg" alt="image"/></td>
+            <td>010</td>
+            <td>Caterpie</td>
+            <td>Bug</td>
+            <td>-</td>
+          </tr>
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Metapod.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\Metapod.jpg" alt="image"/></td>
+            <td>011</td>
+            <td>Metapod</td>
+            <td>Bug</td>
+            <td>-</td>
+          </tr>
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Butterfree.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\Butterfree.jpg" alt="image"/></td>
+            <td>012</td>
+            <td>Butterfree</td>
+            <td>Bug</td>
+            <td>Flying</td>
+          </tr>
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Weedle.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\Weedle.jpg" alt="image"/></td>
+            <td>013</td>
+            <td>Weedle</td>
+            <td>Bug</td>
+            <td>Poison</td>
+          </tr>
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Kakuna.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\Kakuna.jpg" alt="image"/></td>
+            <td>014</td>
+            <td>Kakuna</td>
+            <td>Bug</td>
+            <td>Poison</td>
+          </tr>
+          <tr onclick="document.location ='C:\\Users\\thoma\\OneDrive\\Documents\\Code\\_Pokedex\\Gen_1\\Beedrill.html'">
+            <td id=img><img src="C:\Users\thoma\OneDrive\Documents\Code\_Pokedex\images\Beedrill.jpg" alt="image"/></td>
+            <td>015</td>
+            <td>Beedrill</td>
+            <td>Bug</td>
+            <td>Poison</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+      <div id=scripts>
+        <!---
+        start the Java script files
+
+        first script = dropdown menu for sort options
+        -->
+        <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function sortfunction() {
+          document.getElementById("dropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("sort-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+        <!--
+        second script = search/filter for pokemon list
+        -->
+        <script id =FILTER>
+        function searchfunction() {
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("Search");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("Pokelist");
+          tr = table.getElementsByTagName("tr");
+
+        for (i = 1; i < tr.length; i++) {
+    // Hide the row initially.
+    tr[i].style.display = "none";
+
+    td = tr[i].getElementsByTagName("td");
+    for (var j = 0; j < td.length; j++) {
+      cell = tr[i].getElementsByTagName("td")[j];
+      if (cell) {
+        if (cell.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+          break;
+        }
+      }
+    }
+  }
+}
+        </script>
+        <!--
+        script 3 = sort alphabetically
+        -->
+        <script id=AZ_sort>
+        function AZfunction() {
+          var table, rows, switching, i, x, y, shouldSwitch;
+          table = document.getElementById("Pokelist");
+          switching = true;
+          /* Make a loop that will continue until
+          no switching has been done: */
+          while (switching) {
+            // Start by saying: no switching is done:
+            switching = false;
+            rows = table.rows;
+            /* Loop through all table rows (except the
+            first, which contains table headers): */
+            for (i = 1; i < (rows.length - 1); i++) {
+              // Start by saying there should be no switching:
+              shouldSwitch = false;
+              /* Get the two elements you want to compare,
+              one from current row and one from the next: */
+              x = rows[i].getElementsByTagName("td")[2];
+              y = rows[i + 1].getElementsByTagName("td")[2];
+              // Check if the two rows should switch place:
+              if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                // If so, mark as a switch and break the loop:
+                shouldSwitch = true;
+                  break;
+                }
+              }
+              if (shouldSwitch) {
+                /* If a switch has been marked, make the switch
+                and mark that a switch has been done: */
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+              }
+            }
+          }
+        </script>
+        <!--
+        script 4 = sort numerically
+        -->
+        <script id=increase>
+        function countupfunction() {
+          var table, rows, switching, i, x, y, shouldSwitch;
+          table = document.getElementById("Pokelist");
+          switching = true;
+          /*Make a loop that will continue until
+          no switching has been done:*/
+          while (switching) {
+            //start by saying: no switching is done:
+            switching = false;
+            rows = table.rows;
+            /*Loop through all table rows (except the
+            first, which contains table headers):*/
+            for (i = 1; i < (rows.length - 1); i++) {
+              //start by saying there should be no switching:
+              shouldSwitch = false;
+              /*Get the two elements you want to compare,
+              one from current row and one from the next:*/
+              x = rows[i].getElementsByTagName("TD")[1];
+              y = rows[i + 1].getElementsByTagName("TD")[1];
+              //check if the two rows should switch place:
+              if (Number(x.innerHTML) > Number(y.innerHTML)) {
+                //if so, mark as a switch and break the loop:
+                shouldSwitch = true;
+                break;
+              }
+            }
+            if (shouldSwitch) {
+              /*If a switch has been marked, make the switch
+              and mark that a switch has been done:*/
+              rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+              switching = true;
+            }
+          }
+        }
+      </script>
+      <!--
+      script 5 = reverse alphabetical
+      -->
+      <script id=decrease>
+      function countdownfunction() {
+        var table, rows, switching, i, x, y, shouldSwitch;
+        table = document.getElementById("Pokelist");
+        switching = true;
+        /*Make a loop that will continue until
+        no switching has been done:*/
+        while (switching) {
+          //start by saying: no switching is done:
+          switching = false;
+          rows = table.rows;
+          /*Loop through all table rows (except the
+          first, which contains table headers):*/
+          for (i = 1; i < (rows.length - 1); i++) {
+            //start by saying there should be no switching:
+            shouldSwitch = false;
+            /*Get the two elements you want to compare,
+            one from current row and one from the next:*/
+            x = rows[i].getElementsByTagName("TD")[1];
+            y = rows[i + 1].getElementsByTagName("TD")[1];
+            //check if the two rows should switch place:
+            if (Number(x.innerHTML) < Number(y.innerHTML)) {
+              //if so, mark as a switch and break the loop:
+              shouldSwitch = true;
+              break;
+            }
+          }
+          if (shouldSwitch) {
+            /*If a switch has been marked, make the switch
+            and mark that a switch has been done:*/
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+          }
+        }
+      }
+    </script>
+    <!--
+    script 6 = sort reverse alphabetical order
+    -->
+    <script id=ZA_sort>
+    function ZAfunction() {
+      var table, rows, switching, i, x, y, shouldSwitch;
+      table = document.getElementById("Pokelist");
+      switching = true;
+      /* Make a loop that will continue until
+      no switching has been done: */
+      while (switching) {
+        // Start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /* Loop through all table rows (except the
+        first, which contains table headers): */
+        for (i = 1; i < (rows.length - 1); i++) {
+          // Start by saying there should be no switching:
+          shouldSwitch = false;
+          /* Get the two elements you want to compare,
+          one from current row and one from the next: */
+          x = rows[i].getElementsByTagName("td")[2];
+          y = rows[i + 1].getElementsByTagName("td")[2];
+          // Check if the two rows should switch place:
+          if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+            // If so, mark as a switch and break the loop:
+            shouldSwitch = true;
+              break;
+            }
+          }
+          if (shouldSwitch) {
+            /* If a switch has been marked, make the switch
+            and mark that a switch has been done: */
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+          }
+        }
+      }
+    </script>
+      </div>
+
+  </body>
+
+</html>

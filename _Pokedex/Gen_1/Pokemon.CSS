@@ -1,0 +1,97 @@
+@charset "UTF-8"
+
+header {
+  background-color: #F93939;
+}
+
+header > h1{
+  font-family: serif;
+  text-align: center;
+  color: white;
+  background-color: #F93939;
+  margin-top: 0px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: -2px;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: -5px;
+}
+
+h3 {
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.bs{
+  width: 20px;
+  height: 20px;
+}
+
+.entry h2{
+  color: white;
+}
+
+.initial { grid-area: initial; }
+.base-stats { grid-area: base-stats; }
+.sprites { grid-area: sprites; }
+.evolutions { grid-area: evolutions; }
+.entry { grid-area: entry; }
+.further { grid-area: further; }
+.locations { grid-area: locations; }
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    'initial initial base-stats'
+    'evolutions sprites base-stats'
+    'evolutions entry further'
+    'evolutions blank further'
+    'locations locations further';
+  grid-gap: 20px;
+  padding: 20px;
+  margin-left: 15px;
+}
+
+.further {
+  text-align: center;
+}
+
+.entry{
+  text-align: center;
+  background-color: #F93939;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+.initial {
+  text-align: center;
+}
+
+.sprites {
+  padding-left: 10%;
+}
+
+.Base {
+  padding-left: 30px;
+}
+
+#Gen {
+  color: white;
+}

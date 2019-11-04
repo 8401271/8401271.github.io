@@ -1,0 +1,109 @@
+@charset "UTF-8"
+
+header {
+  background-color: #F93939;
+}
+
+h1 {
+  font-family: serif;
+  text-align: center;
+  color: white;
+  background-color: #F93939;
+  margin-top: 0px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+input {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 10%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr:nth-of-type(odd) {
+  background-color:#e3e3e3;
+}
+
+th {
+  background-color: #F93939;
+}
+
+td {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+.search {grid-area: left;
+        align-self: center;
+        margin-left: 15%;}
+
+.sort   {grid-area: right;
+        align-self: auto;}
+
+.extras {grid-area: left;
+        align-self: center;
+        margin-top: 10%;
+        margin-left: 15%;}
+
+.index  {grid-area: right;
+        align-self: center;
+        margin-left: 20%;}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+  'left right'
+  'left right'
+  'none right'
+}
+
+.dropbtn {
+  background-color: red;
+  padding: 10px;
+}
+
+.sort{
+  display: block;
+}
+
+.sort-content {
+  display: none;
+  position: absolute;
+  max-width: 100px;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.sort-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.sort a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+#Pokelist{
+  font-size: 20px;
+}
